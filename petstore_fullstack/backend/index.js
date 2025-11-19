@@ -1,4 +1,4 @@
-import express from "express";
-const app = express();
-app.get("/", (req,res)=>res.send("Petstore Backend Running"));
-app.listen(4000, ()=>console.log("Backend running"));
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
